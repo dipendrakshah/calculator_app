@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="general_calculator">General</string>
+    <string name="general_calculator_label">General Calculator</string>
+    <string name="scientific_calculator">Scientific</string>
+    <string name="scientific_calculator_label">Scientific Calculator</string>
+</resources>

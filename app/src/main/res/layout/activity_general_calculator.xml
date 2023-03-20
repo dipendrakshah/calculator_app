@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralCalculatorActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="452dp">
+
+
+    <TextView
+        android:id="@+id/operand_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginBottom="22dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:columnCount="4"
+        android:padding="16dp"
+        android:rowCount="4"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operand_text_view">
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="7"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="8"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="9"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:onClick="onOperatorButtonClick"
+            android:text="+"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="4"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="5"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="6"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <Button
+            android:onClick="onOperatorButtonClick"
+            android:text="-"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="645dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="1"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="701dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="2"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="701dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="3"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="701dp" />
+
+        <Button
+            android:onClick="onOperatorButtonClick"
+            android:text="*"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="701dp" />
+
+        <Button
+            android:onClick="onNumberButtonClick"
+            android:text="0"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="756dp" />
+
+        <Button
+            android:onClick="onDecimalButtonClick"
+            android:text="."
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="756dp" />
+
+        <Button
+            android:onClick="onClearButtonClick"
+            android:text="C"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="756dp" />
+
+        <Button
+            android:onClick="onOperatorButtonClick"
+            android:text="/"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="756dp" />
+
+    </GridLayout>
+
+    <Button
+
+        android:id="@+id/equalsToButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="onEqualsTo"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
